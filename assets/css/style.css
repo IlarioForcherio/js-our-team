@@ -7,6 +7,22 @@
 }
 
 
+.cnt-100{
+  height: 100vh;
+}
+
+header{
+  height: 20%;
+}
+
+main{
+height: 60%;
+}
+
+footer{
+  height: 20%;
+}
+
 
  #card-cnt{
  flex-wrap: wrap;

@@ -42,6 +42,9 @@ const team = [
   ];
 
 
+  //creo una variabile generale "percorso per il percorso dell'immagine"
+let path = './assets/img/'
+
   //recuer con un ciclo le informazioni dall'array di oggetti
   //in questo caso si tratta di un array quiindi per recuperare le informazioni si usa il for
   //una volta recupato l'oggetto desiderato si recupera l'informazione dentro al'oggetto con la dot notation
@@ -67,9 +70,11 @@ const team = [
     //
     cardCntHtml.innerHTML +=`
     <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="${path +elementiStaff.image  }" class="card-img-top img-fluid " alt="...">
     <div class="card-body">
-      <p class="card-text">${elementiStaff.name}${elementiStaff.role}</p>
+      <p class="card-text">${elementiStaff.name}</p>
+      <p class="card-text">${elementiStaff.role}</p>
+     
     </div>
   </div>
   `
